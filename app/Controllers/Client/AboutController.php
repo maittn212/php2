@@ -7,10 +7,10 @@ use App\Controller;
 // use App\Models\Product;
 
 
-class HomeController extends Controller{
+class AboutController extends Controller{
     public function index(){
-        $heading1 = 'Trang chủ';
+        $heading1 = 'Trang giới thiệu';
         $subHeading1 = '********************';
-        return view('client.home', compact('heading1', 'subHeading1'));
+        return view('client.about', compact('heading1', 'subHeading1'));
     }
 }

@@ -1,0 +1,17 @@
+<?php $_shouldextend[1]=1; ?>
+<?php /* <?php $this->startSection('title'); ?>
+
+<?php $this->stopSection(); ?>*/ ?>
+<?php $this->startSection('content'); ?>
+<nav aria-label="breadcrumb">
+ <ol class="breadcrumb">
+ <li class="breadcrumb-item"><a href="#">Home</a></li>
+ <li class="breadcrumb-item active" aria-current="page">Overview</li>
+ </ol>
+</nav>
+<h1 class="h2">Dashboard</h1>
+<p>This is the homepage of a simple admin interface which is part of a tutorial written on Themesberg
+</p>
+
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('admin.layouts.main'); } ?>

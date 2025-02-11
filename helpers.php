@@ -33,7 +33,25 @@ if(!function_exists('slug')){
         $string = mb_strtolower($string, 'UTF-8');
 
         // Thay thế các ký tự đặc biệt và dấu tiếng việt
-        
+        $string = preg_replace('[^\p{L}\p{N}\s]/u', '', $string);
+        $string = preg_replace('[\s]+/', $seperator, $string);
 
+        // Loại bỏ các ký tự phân cách ở đầu và cuối chuỗi
+        $string = trim($string, $seperator). '-' . random_string(6);
+
+        return $string;
+    }
+}
+
+if(!function_exists('random_string')){
+    function random_string($length = 10){
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $charactersLength = strlen($characters);
+        $randomString = '';
+
+        for($i = 0; $i<$length; $i++){
+            $randomString .= $characters[rand(0, $charactersLength -1)];
+        }
+        return $randomString;
     }
 }
