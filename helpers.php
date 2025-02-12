@@ -55,3 +55,23 @@ if(!function_exists('random_string')){
         return $randomString;
     }
 }
+
+if(!function_exists('redirect404')){
+    function redirect404(){
+        header('HTTP/1.1 404 Not Found');
+        exit;
+    }
+}
+
+if(!function_exists('redirect')){
+    function redirect($path){
+        header('Location:' .$path);
+        exit;
+    }
+}
+
+if(!function_exists('is_upload')){
+    function is_upload($key){
+        return isset($_FILES[$key]) && $_FILES[$key]['size'] >0;
+    }
+}

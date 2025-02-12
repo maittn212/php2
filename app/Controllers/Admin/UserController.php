@@ -4,9 +4,10 @@ namespace App\Controllers\Admin;
 
 use App\Controller;
 use App\Models\User;
+use Rakit\Validation\Validator;
 
 class UserController extends Controller{
-    private $user;
+    private User $user;
     public function __construct(){
         $this->user = new User();
     }   
@@ -45,14 +46,193 @@ class UserController extends Controller{
     }
 
     public function index(){
-        $title = '<i>Trang danh sách</i>';
+        $title = 'Danh sách người dùng';
         $data = $this->user->findAll();
+        // debug($data);
         
         return view(
             'admin.users.index',
             compact('title', 'data')
 
         );
+    }
+    public function show($id){
+        $user = $this->user->find($id);
+        // debug($user);
+        if(empty($user)){
+            redirect404();
+        }
+        $title = 'Chi tiết người dùng';
+        return view('admin.users.show', compact('user', 'title'));
+    }
+    public function delete($id){
+        $user = $this->user->find($id);
+        if(empty($user)){
+            redirect404();
+        }
+        $this->user->delete($id);
+
+        if($user['avatar'] && file_exists($user['avatar'])){
+            unlink($user['avatar']);
+        }
+
+        $_SESSION['status'] = true;
+        $_SESSION['msg'] = 'Thao tác thành công';
+
+        redirect('/admin/users');
+    }
+    public function create(){
+        $title = 'Thêm mới người dùng';
+        return view('admin.users.create', compact('title'));
+    }
+    public function store(){
+        try {
+            $data = $_POST + $_FILES;
+            // validate
+            $validator = new Validator;
+
+            $errors = $this->validate(
+                $validator,
+                $data,
+                [
+                    'name' => 'required|max:50',
+                    'email' => [
+                        'required',
+                        'email',
+                        function ($value){
+                            $flag = (new User)->checkExistsEmailForCreate($value);
+                            if($flag){
+                                return ":attribute has existed";
+                            }
+                        }
+                    ],
+                    'password' => 'required|min:6|max:30',
+                    'confirm_password' => 'required|same:password',
+                    'avatar' => 'nullable|uploaded_file:0,2048K,png,jpeg,jpg',
+                    'type' => [$validator('in',['admin','client'])],
+                ]
+                );
+
+                if(!empty($errors)){
+                    $_SESSION['status'] = false;
+                    $_SESSION['msg'] = 'Thao tác không thành công';
+                    $_SESSION['data'] = $_POST;
+                    $_SESSION['errors'] = $errors;
+
+                    redirect('/admin/users/create');
+                }else{
+                    $_SESSION['data'] = null;
+                }
+
+                // upload file
+                if(is_upload('avatar')){
+                    $data['avatar'] = $this->uploadFile($data['avatar'],'user');
+                }else{
+                    $data['avatar'] = null;
+                }
+
+                // điều chỉnh dl
+                unset($data['confirm_password']);
+                $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
+
+                // insert
+                $this->user->insert($data);
+                $_SESSION['status'] = true;
+                $_SESSION['msg'] = 'Thao tác thành công';
+
+                redirect('/admin/users');
+        } catch (\Throwable $th) {
+            $this->logError($th->__tostring());
+
+            $_SESSION['status'] = false;
+            $_SESSION['msg'] = 'Thao tác KHÔNG thành công!';
+            $_SESSION['data'] = $_POST;
+            redirect('/admin/users/create');
+
+        }
+    }
+
+    public function edit($id){
+        $user = $this->user->find($id);
+        if(empty($user)){
+            redirect404();
+        }
+        $title = 'Cập nhật người dùng';
+        return view('admin.users.edit', compact('user','title')); 
+    }
+
+    public function update($id){
+        // var_dump($_POST);die();
+        $user = $this->user->find($id);
+        // debug($user);
+        if(empty($user)){
+            redirect404();
+        }
+        try {
+            $data = $_POST + $_FILES;
+            // validate
+            $validator = new Validator;
+
+            $errors = $this->validate(
+                $validator,
+                $data,
+                [
+                    'name' => 'required|max:50',
+                    'email' => [
+                        'required',
+                        'email',
+                        function ($value) use($id){
+                            $flag = (new User)->checkExistsEmailForUpdate($id, $value);
+                            if($flag){
+                                return ":attribute has existed";
+                            }
+                        }
+                    ],
+                    'password' => 'required|min:6|max:30',
+                    'confirm_password' => 'required|same:password',
+                    'avatar' => 'nullable|uploaded_file:0,2048K,png,jpeg,jpg',
+                    'type' => [$validator('in',['admin','client'])],
+                ]
+                );
+
+                if(!empty($errors)){
+                    $_SESSION['status'] = false;
+                    $_SESSION['msg'] = 'Thao tác không thành công';
+                    $_SESSION['errors'] = $errors;
+
+                    redirect('/admin/users/edit/' .$id);
+                }
+
+                // upload file
+                if(is_upload('avatar')){
+                    $data['avatar'] = $this->uploadFile($data['avatar'],'users');
+                }else{
+                    $data['avatar'] = $user['avatar'];
+                }
+
+                // điều chỉnh dl
+                $data['updated_at'] = date('Y-m-d H:i:s');
+
+                // update
+                $a = $this->user->update($id, $data);
+                var_dump($id);die();
+
+                // Xóa ảnh cũ
+                if($data['avatar'] != $user['avatar'] && $user['avatar'] && file_exists($user['avatar'])){
+                    unlink($user['avatar']);
+                }
+                $_SESSION['status'] = true;
+                $_SESSION['msg'] = 'Thao tác thành công';
+
+                redirect('/admin/users');
+        } catch (\Throwable $th) {
+            $this->logError($th->__tostring());
+            echo "Lỗi: " . $th->getMessage();die;
+            $_SESSION['status'] = false;
+            $_SESSION['msg'] = 'Thao tác KHÔNG thành công!';
+            echo 'ádasd';die;
+            redirect('/admin/users/edit/'.$id);
+        }
     }
 
     public function testUploadFile(){
@@ -68,4 +248,5 @@ class UserController extends Controller{
         header('Location: /admin/users');
         exit;
     }
+
 }

@@ -2,6 +2,16 @@
 namespace App;
 
 class Controller{
+
+    public function validate($validator, $data, $rules){
+        $validation = $validator->make($data, $rules);
+
+        $validation->validate();
+        if($validation->fails()){
+            return $validation->errors()->firstOfAll();
+        }
+        return [];
+    }
     public function logError($message){
         $date = date('d-m-y');
 
@@ -12,7 +22,7 @@ class Controller{
         $fileTmpPath = $file['tmp_name']; // Đường dẫn tạm thời của file
         $fileName = time() . '-' .$file['name']; // tên file chống trùng bằng timestamp
 
-        $uploadDir = 'storage/uploads' . $folder . '/';
+        $uploadDir = 'storage/uploads/' . $folder . '/';
 
         // Tạo thư mục nếu chưa tồn tại
         if(!is_dir($uploadDir)){

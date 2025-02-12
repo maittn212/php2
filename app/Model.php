@@ -65,7 +65,7 @@ class Model{
         ->where('id = :id ')
         ->setParameter('id', $id);
 
-        return $queryBuilder->fetchAllAssociative();
+        return $queryBuilder->fetchAssociative();
     }
 
     // Phương thức thêm bản ghi mới và trả về id
