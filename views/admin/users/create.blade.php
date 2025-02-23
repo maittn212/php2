@@ -25,14 +25,14 @@
                                 <label for="inputName" class="col-4 col-form-label">Name</label>
                                 <div class="col-8">
                                     <input type="text" class="form-control" name="name" id="name"
-                                        value="{{$_SESSION['data']['name']}}" />
+                                        value="{{$_SESSION['data']['name'] ?? null}}" />
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <label for="inputName" class="col-4 col-form-label">Email</label>
                                 <div class="col-8">
                                     <input type="text" class="form-control" name="email" id="email"
-                                        value="{{$_SESSION['data']['email']}}" />
+                                        value="{{$_SESSION['data']['email'] ?? null}}" />
                                 </div>
                             </div>
                             <div class="mb-3 row">

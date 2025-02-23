@@ -1,0 +1,1101 @@
+PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->store()
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->store()
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\InvalidFieldNameException: An exception occurred while executing a query: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:52
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->store()
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->store()
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->store()
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\InvalidFieldNameException: An exception occurred while executing a query: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:52
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->store()
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->store()
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->store()
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\InvalidFieldNameException: An exception occurred while executing a query: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:52
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->store()
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->store()
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->store()
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\InvalidFieldNameException: An exception occurred while executing a query: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:52
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->store()
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->store()
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->store()
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\InvalidFieldNameException: An exception occurred while executing a query: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:52
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->store()
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->store()
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->store()
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\InvalidFieldNameException: An exception occurred while executing a query: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:52
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->store()
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->store()
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->store()
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\InvalidFieldNameException: An exception occurred while executing a query: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:52
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(73): App\Model->insert(Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->store()
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(81): App\Model->insert(Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->store()
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(81): App\Model->insert(Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->store()
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\InvalidFieldNameException: An exception occurred while executing a query: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:52
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(81): App\Model->insert(Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->store()
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(81): App\Model->insert(Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->store()
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(81): App\Model->insert(Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->store()
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\InvalidFieldNameException: An exception occurred while executing a query: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_thumnail' in 'field list' in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:52
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'INSERT INTO pro...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(518): Doctrine\DBAL\Connection->executeStatement('INSERT INTO pro...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(73): Doctrine\DBAL\Connection->insert('products', Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(81): App\Model->insert(Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->store()
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(159): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(159): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\DriverException: An exception occurred while executing a query: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:91
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(159): App\Model->update('5', Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\DriverException: An exception occurred while executing a query: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:91
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\DriverException: An exception occurred while executing a query: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:91
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(162): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(162): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\DriverException: An exception occurred while executing a query: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:91
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(162): App\Model->update('5', Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\DriverException: An exception occurred while executing a query: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:91
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\DriverException: An exception occurred while executing a query: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:91
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\DriverException: An exception occurred while executing a query: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:91
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(162): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(162): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\DriverException: An exception occurred while executing a query: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:91
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(162): App\Model->update('5', Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\DriverException: An exception occurred while executing a query: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:91
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\DriverException: An exception occurred while executing a query: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:91
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(161): App\Model->update('5', Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(164): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(164): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\DriverException: An exception occurred while executing a query: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:91
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(164): App\Model->update('5', Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(164): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(164): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\DriverException: An exception occurred while executing a query: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:91
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(164): App\Model->update('5', Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(164): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(164): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\DriverException: An exception occurred while executing a query: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:91
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(164): App\Model->update('5', Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(164): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(164): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\DriverException: An exception occurred while executing a query: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:91
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(164): App\Model->update('5', Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(164): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(164): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\DriverException: An exception occurred while executing a query: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:91
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(164): App\Model->update('5', Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php:55
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(55): PDOStatement->execute()
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(164): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Exception.php:24
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\PDO\Statement.php(57): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(882): Doctrine\DBAL\Driver\PDO\Statement->execute()
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#4 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(164): App\Model->update('5', Array)
+#5 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#6 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#9 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#10 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#11 {main}
+
+Next Doctrine\DBAL\Exception\DriverException: An exception occurred while executing a query: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'price_sale' at row 1 in C:\laragon\www\b45\vendor\doctrine\dbal\src\Driver\API\MySQL\ExceptionConverter.php:91
+Stack trace:
+#0 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1414): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(1356): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(888): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'UPDATE products...', Array, Array)
+#3 C:\laragon\www\b45\vendor\doctrine\dbal\src\Connection.php(487): Doctrine\DBAL\Connection->executeStatement('UPDATE products...', Array, Array)
+#4 C:\laragon\www\b45\app\Model.php(79): Doctrine\DBAL\Connection->update('products', Array, Array)
+#5 C:\laragon\www\b45\app\Controllers\Admin\ProductController.php(164): App\Model->update('5', Array)
+#6 [internal function]: App\Controllers\Admin\ProductController->update('5')
+#7 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(482): call_user_func_array(Array, Array)
+#8 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(440): Bramus\Router\Router->invoke('App\\Controllers...', Array)
+#9 C:\laragon\www\b45\vendor\bramus\router\src\Bramus\Router\Router.php(287): Bramus\Router\Router->handle(Array, true)
+#10 C:\laragon\www\b45\routers\index.php(12): Bramus\Router\Router->run()
+#11 C:\laragon\www\b45\index.php(5): require('C:\\laragon\\www\\...')
+#12 {main}

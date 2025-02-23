@@ -26,6 +26,7 @@ class Controller{
 
         // Tạo thư mục nếu chưa tồn tại
         if(!is_dir($uploadDir)){
+            
             mkdir($uploadDir, 0755, true);
         }
 

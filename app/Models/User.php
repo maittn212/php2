@@ -22,9 +22,21 @@ class User extends Model{
             ->from($this->tableName)
             ->where('email = :email')
             ->andWhere('id != :id')
-            ->setParameter('email',$email);
+            ->setParameter('email',$email)
+            ->setParameter('id',$id);
+
         $result = $queryBuilder->fetchOne();
         // Nếu số lượng >0 là email đã tồn tại
         return $result > 0;
+    }
+
+    public function getUserByEmail($email){
+        $queryBuilder = $this->connection->createQueryBuilder();
+        $queryBuilder->select('*')
+            ->from($this->tableName)
+            ->where('email = :email')
+            ->setParameter('email', $email);
+        $result = $queryBuilder->fetchAssociative();
+        return $result;
     }
 }

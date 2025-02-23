@@ -126,7 +126,7 @@ class UserController extends Controller{
 
                 // upload file
                 if(is_upload('avatar')){
-                    $data['avatar'] = $this->uploadFile($data['avatar'],'user');
+                    $data['avatar'] = $this->uploadFile($data['avatar'],'users');
                 }else{
                     $data['avatar'] = null;
                 }
@@ -154,6 +154,7 @@ class UserController extends Controller{
 
     public function edit($id){
         $user = $this->user->find($id);
+        // debug($user);
         if(empty($user)){
             redirect404();
         }
@@ -164,12 +165,13 @@ class UserController extends Controller{
     public function update($id){
         // var_dump($_POST);die();
         $user = $this->user->find($id);
-        // debug($user);
+        // debug($id);
         if(empty($user)){
             redirect404();
         }
         try {
             $data = $_POST + $_FILES;
+            // debug($data);
             // validate
             $validator = new Validator;
 
@@ -188,8 +190,6 @@ class UserController extends Controller{
                             }
                         }
                     ],
-                    'password' => 'required|min:6|max:30',
-                    'confirm_password' => 'required|same:password',
                     'avatar' => 'nullable|uploaded_file:0,2048K,png,jpeg,jpg',
                     'type' => [$validator('in',['admin','client'])],
                 ]
@@ -203,7 +203,8 @@ class UserController extends Controller{
                     redirect('/admin/users/edit/' .$id);
                 }
 
-                // upload file
+                // upload file'
+
                 if(is_upload('avatar')){
                     $data['avatar'] = $this->uploadFile($data['avatar'],'users');
                 }else{
@@ -211,11 +212,11 @@ class UserController extends Controller{
                 }
 
                 // điều chỉnh dl
+                date_default_timezone_set('Asia/Ho_Chi_Minh');
                 $data['updated_at'] = date('Y-m-d H:i:s');
 
                 // update
-                $a = $this->user->update($id, $data);
-                var_dump($id);die();
+                $this->user->update($id, $data);
 
                 // Xóa ảnh cũ
                 if($data['avatar'] != $user['avatar'] && $user['avatar'] && file_exists($user['avatar'])){
@@ -227,10 +228,9 @@ class UserController extends Controller{
                 redirect('/admin/users');
         } catch (\Throwable $th) {
             $this->logError($th->__tostring());
-            echo "Lỗi: " . $th->getMessage();die;
+            
             $_SESSION['status'] = false;
             $_SESSION['msg'] = 'Thao tác KHÔNG thành công!';
-            echo 'ádasd';die;
             redirect('/admin/users/edit/'.$id);
         }
     }
